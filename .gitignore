@@ -1,0 +1,12 @@
+#macos and temp files 
+.* Thumbs.db 
+!/.gitignore
+.classpath
+.project
+.settings/
+
+/bin
+
+
+
+
