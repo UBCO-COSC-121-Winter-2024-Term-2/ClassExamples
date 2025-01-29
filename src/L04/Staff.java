@@ -54,7 +54,7 @@ public class Staff {
 		
 		whatObject(e1);
 		
-		whatObject(h1);
+		whatObject(1);
 		
 		
 	}

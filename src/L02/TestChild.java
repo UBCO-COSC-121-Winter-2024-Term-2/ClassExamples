@@ -1,4 +1,4 @@
-package L2;
+package L02;
 
 public class TestChild {
 
