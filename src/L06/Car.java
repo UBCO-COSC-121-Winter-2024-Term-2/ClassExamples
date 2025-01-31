@@ -1,6 +1,6 @@
 package L06;
 
-public class Car implements Comparable<Car>, Cloneable {
+public class Car implements Comparable<Car> {
 	
 	private int topSpeed;
 	public String model;
@@ -56,10 +56,11 @@ public class Car implements Comparable<Car>, Cloneable {
 		//for a deep copy
 		//1 make copy of obj
 		
-		Car c = (Car)super.clone();
-		Radio newRadio = (Radio)r.clone();
-		c.r = newRadio;
-		return c;
+//		Car c = (Car)super.clone();
+//		Radio newRadio = (Radio)r.clone();
+//		c.r = newRadio;
+//		return c;
+		return super.clone();
 	}
 	
 }

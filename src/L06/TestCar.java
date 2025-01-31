@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class TestCar {
 
-	public static void main(String[] args) throws CloneNotSupportedException{
+	public static void main(String[] args){
 		// TODO Auto-generated method stub
 		
 		Car gti = new Car(250, "GTI", 3);
@@ -34,19 +34,26 @@ public class TestCar {
 		
 		gti.setChannel(104.7);
 		
-		Car newGti = (Car)(gti.clone());
+		//Car newGti = (Car)(gti.clone());
 		
-		System.out.println(newGti);
-		System.out.println(newGti == gti);
-		
-		System.out.println("NewGTI");
-		newGti.getChannel();
+//		System.out.println(newGti);
+//		System.out.println(newGti == gti);
+//		
+//		System.out.println("NewGTI");
+//		newGti.getChannel();
 		
 		//set channel on GTI
 		gti.setChannel(88.9);
 		
 		System.out.println("NewGTI");
-		newGti.getChannel();
+		//newGti.getChannel();
+		try {
+		gti.clone();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
 
 	}
 
